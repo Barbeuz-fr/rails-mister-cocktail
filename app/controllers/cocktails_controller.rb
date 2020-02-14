@@ -17,13 +17,13 @@ class CocktailsController < ApplicationController
     @cocktail.save
 
     # no need for app/views/cocktails/create.html.erb
-    redirect_to cocktail_path(@cocktail)
+    redirect_to root_path
   end
 
   def destroy
     @cocktail = Cocktail.find(params[:id])
     @cocktail.destroy
-    redirect_to cocktails_path
+    redirect_to root_path
   end
 
   private
