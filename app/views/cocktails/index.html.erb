@@ -2,9 +2,6 @@
   <h1>Le bar de Barbeuz</h1>
 </div>
 
-<%= cl_image_tag("dd1bhz9s8jpv60lrxaxd",
-      width: 400, height: 300, crop: :fill) %>
-
 <div class="container">
   <%= link_to "Ajouter un cocktail", new_cocktail_path  %>
   <div class="row justify-content-center">
@@ -13,14 +10,20 @@
 
           <!-- Card cocktail -->
           <div class="col-4">
-              <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+            <% if cocktail.photo.attached? %>
+              <div class="card"
+                    style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))
+                    url('<%= cl_image_path cocktail.photo.key, crop: :fill %>')">
                 <%= link_to cocktail.name, cocktail_path(cocktail) %>
+                <%= cocktail.photo.key %>
+            <% else %>
+              <div class="card">
+            <% end %>
                 <div class="delete-button">
                   <%= link_to "Delete", cocktail_path(cocktail), method: :delete %>
                 </div>
               </div>
           </div>
       <% end %>
-
   </div>
 </div>
