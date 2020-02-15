@@ -1,16 +1,16 @@
-<%= link_to "Back to cocktail list", root_path %>
+<div class="container bg-secondary">
+<!-- Title -->
+<h1 class="text-white"><%= @cocktail.name %></h1>
 
-<h1>Cocktail: <%= @cocktail.name %></h1>
-
+<!-- Photo -->
 <% if @cocktail.photo.attached? %>
   <%= cl_image_tag @cocktail.photo.key, height: 400, width: 500, crop: :fill %>
 <% else %>
-  <p>No photo attached</p>
+  <p></p>
 <% end %>
 
-<div class="container">
+  <div>
   <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail)  %>
-
   <% @doses.each do |dose|%>
     <% if dose.cocktail_id == @cocktail.id %>
       <p>Ingrédient: <%= dose.ingredient.name %></p>
@@ -20,4 +20,5 @@
                   method: :delete %>
     <% end %>
   <% end %>
+  </div>
 </div>

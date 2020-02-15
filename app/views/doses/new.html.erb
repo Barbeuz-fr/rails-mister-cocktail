@@ -1,9 +1,9 @@
-<%= link_to "Back to cocktail list", cocktails_path %>
-<h1>Add a new dose to <%= @cocktail.name  %></h1>
-
-<%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.button :submit %>
-<% end %>
+<div class="container">
+  <h1 class="text-white">Add a new dose to <%= @cocktail.name  %></h1>
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+    <%= f.input :description, class:"text-white" %>
+    <%= f.association :ingredient , class:"text-white"%>
+    <%= f.button :submit, class:"btn text-white" %>
+  <% end %>
+</div>
 
