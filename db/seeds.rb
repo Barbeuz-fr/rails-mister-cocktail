@@ -6,15 +6,21 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-mojito = Cocktail.new(name: "mojito")
-mojito.save
-long_island = Cocktail.new(name: "long island")
-long_island.save
-
-lemon = Ingredient.new(name: "lemon")
+lemon = Ingredient.new(name: "citron")
 lemon.save
-ice = Ingredient.new(name: "ice")
+ice = Ingredient.new(name: "glaçon")
 ice.save
-mint_leaves = Ingredient.new(name: "mint leaves")
+mint_leaves = Ingredient.new(name: "feuilles de menthe")
 mint_leaves.save
 
+rhum = Ingredient.new(name: "rhum blanc")
+rhum.save
+
+vodka = Ingredient.new(name: "Vodka")
+vodka.save
+
+gin = Ingredient.new(name: "Gin")
+gin.save
+
+aperol = Ingredient.new(name: "Aperol")
+aperol.save
