@@ -17,7 +17,7 @@
 
   <body>
     <!-- Navbar -->
-      <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
         <%= link_to "/", class: "navbar-brand" do %>
           <%= image_tag "https://images.assetsdelivery.com/compings_v2/fokaspokas/fokaspokas1808/fokaspokas180802060.jpg" %>
         <% end %>
@@ -39,17 +39,21 @@
     <%= yield %>
 
     <!-- Footer -->
+    <div class="mt-5"></div>
     <div class="footer text-center padding-bottom-3">
-      <div class="footer-links">
-        <a href="#"><i class="fab fa-github text-white"></i></a>
-        <a href="#"><i class="fab fa-instagram text-white"></i></a>
-        <a href="#"><i class="fab fa-facebook text-white"></i></a>
-        <a href="#"><i class="fab fa-twitter text-white"></i></a>
-        <a href="#"><i class="fab fa-linkedin text-white"></i></a>
-      </div>
-      <div class="footer-copyright text-white">
-        This footer is made with <i class="fas fa-heart text-white"></i> at Le Wagon
-      </div>
+      <ul>
+        <div class="footer-links">
+          <a href="#"><i class="fab fa-github text-white"></i></a>
+          <a href="#"><i class="fab fa-instagram text-white"></i></a>
+          <a href="#"><i class="fab fa-facebook text-white"></i></a>
+          <a href="#"><i class="fab fa-twitter text-white"></i></a>
+          <a href="#"><i class="fab fa-linkedin text-white"></i></a>
+        </div>
+        <div><br></div>
+        <div class="footer-copyright grey-text-color">
+          <i class="fas fa-cocktail"></i> Le Bar de Barbeuz <i class="fas fa-copyright"></i> <i class="fas fa-cocktail"></i>
+        </div>
+      </ul>
     </div>
     <div class="mb-3">
     </div>

@@ -21,7 +21,9 @@
               <div class="card">
             <% end %>
                 <div class="delete-button">
-                  <%= link_to "Delete", cocktail_path(cocktail), method: :delete, class:"text-white" %>
+                  <%= link_to cocktail_path(cocktail), method: :delete, class:"text-white" do %>
+                    <i class="fa fa-trash" aria-hidden="true" target="_blank"></i>
+                  <% end %>
                 </div>
               </div>
           </div>

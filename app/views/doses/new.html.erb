@@ -1,5 +1,9 @@
+<br>
+<br>
+<br>
+
 <div class="container">
-  <h1 class="text-white">Add a new dose to <%= @cocktail.name  %></h1>
+  <h1 class="text-white">Ajouter un ingrédient <%= @cocktail.name  %></h1>
   <%= simple_form_for [@cocktail, @dose] do |f| %>
     <%= f.input :description, class:"text-white" %>
     <%= f.association :ingredient , class:"text-white"%>
