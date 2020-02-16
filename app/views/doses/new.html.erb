@@ -2,8 +2,10 @@
 <br>
 <br>
 
-<div class="container">
-  <h1 class="text-white">Ajouter un ingrédient <%= @cocktail.name  %></h1>
+<div class="container pt-5 pb-5 pl-3 pr-3"
+      style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url('<%= cl_image_path @cocktail.photo.key %>')">
+  <h1 class="text-white">Ajouter un ingrédient au <%= @cocktail.name  %></h1>
   <%= simple_form_for [@cocktail, @dose] do |f| %>
     <%= f.input :description, class:"text-white" %>
     <%= f.association :ingredient , class:"text-white"%>

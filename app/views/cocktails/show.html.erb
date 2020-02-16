@@ -5,16 +5,10 @@
       style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
         url('<%= cl_image_path @cocktail.photo.key, height: 600 %>')">
 
-<!-- Title and photo-->
-<% if @cocktail.photo.attached? %>
+  <!-- Title and photo-->
   <h1 class="text-white text-center display-2">
     <%= @cocktail.name %>
   </h1>
-<% else %>
-  <h1 class="text-white text-center display-2">
-    <%= @cocktail.name %>
-  </h1>
-<% end %>
 
   <div>
     <!-- Sous-titre -->
