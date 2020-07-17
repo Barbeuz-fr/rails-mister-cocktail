@@ -15,7 +15,6 @@ Rails.application.routes.draw do
   get "/nos_services", to: "ecologists#fr-services"
   get "/blog_fr", to: "ecologists#fr-blog-index"
 
-
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   # resources :ecologists
 end
