@@ -28,22 +28,33 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Notre concept</a>
+            </li>
             <li class="nav-item">
-              <%= link_to "Ajouter un cocktail", new_cocktail_path, class:"btn btn-primary btn-light btn-block monospace-font"%>
+              <a class="nav-link" href="#">Nos valeurs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nos services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
             </li>
           </ul>
         </div>
       </div>
 
+      <div class="content-wrapper">
+        <%= yield %>
+      </div>
 
-    <%= yield %>
 
     <!-- Footer -->
     <div class="mt-5"></div>
     <div class="footer text-center padding-bottom-3">
       <ul>
         <div class="footer-links">
-          <a href="#"><i class="fab fa-github text-white"></i></a>
           <a href="#"><i class="fab fa-instagram text-white"></i></a>
           <a href="#"><i class="fab fa-facebook text-white"></i></a>
           <a href="#"><i class="fab fa-twitter text-white"></i></a>
@@ -51,7 +62,7 @@
         </div>
         <div><br></div>
         <div class="footer-copyright grey-text-color">
-          <i class="fas fa-cocktail"></i> Le Bar de Barbeuz <i class="fas fa-copyright"></i> <i class="fas fa-cocktail"></i>
+          Little Ecologist <i class="fas fa-copyright"></i>
         </div>
       </ul>
     </div>

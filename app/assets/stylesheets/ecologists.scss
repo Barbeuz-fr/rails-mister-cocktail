@@ -1,0 +1,37 @@
+// Place all the styles related to the ecologists controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// Place all the styles related to the cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+h1 {
+  font-size: 30px;
+  white-space: nowrap;
+  font-family: Helvetica;
+}
+
+.monospace-font {
+  font-family: Helvetica;
+}
+
+h2 {
+  font-family: Helvetica;
+}
+
+p {
+  font-family: Helvetica;
+  color: darkgrey;
+}
+
+body {
+  font-family: Helvetica;
+  background-color: white;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 800px;
+  }
+}
