@@ -1,0 +1,2 @@
+module EcologistsHelper
+end
