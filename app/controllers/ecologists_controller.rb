@@ -2,7 +2,7 @@ class EcologistsController < ApplicationController
   def index
   end
 
-  def home
+  def us_home
   end
 
   def show
