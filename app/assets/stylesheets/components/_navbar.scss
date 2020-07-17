@@ -1,6 +1,8 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  background-color: $ecologist-light-green;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +11,8 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.main-logo {
+  border-radius: 10%;
 }
