@@ -10,9 +10,9 @@
       <%= image_tag "little_ecologists_sans_slogan.jpg", alt: "logo", width: 300 %>
 
     </div>
-    <div class="col-8">
+    <div class="col-8 pl-3" id="tagline">
       <!-- Nom -->
-      <%= image_tag "raising-future-awareness.png", alt: "Raising future generation awareness", width: 500 %>
+      <%= image_tag "raising-future-awareness.png", alt: "Raising future generation awareness", width: 450 %>
     </div>
   </div>
 </div>
@@ -22,10 +22,14 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-
-    <h2>
-      Notre mission
+    <h2 class="green-font">
+      <b>
+        <i>
+          Notre mission
+        </i>
+      </b>
     </h2>
+
     <h3>
       Notre mission est d’éduquer les enfants à protéger l’environnement
       et à créer des habitudes respectueuses de la nature avec:
@@ -57,9 +61,11 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <h2>
+      <h2 class="green-font">
         <b>
-          Pourquoi Little Ecologists?
+          <i>
+            Pourquoi Little Ecologists?
+          </i>
         </b>
       </h2>
     </div>
@@ -90,11 +96,21 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <h4>
-        <i>“Nous n’héritons pas de la terre de nos parents, nous l’empruntons à nos enfants.”</i>
-        <br>
-        - Antoine de Saint-Exupéry
-      </h4>
+      <div>
+        <%= image_tag "beach.png",
+          alt: "Beach",
+          style: 'height:100%;width:100%;'
+          %>
+        <h3 class="overlay-text">
+          <i>
+            “Nous n’héritons pas de la terre de nos parents,
+            <br>
+            nous l’empruntons à nos enfants.”
+          </i>
+          <br>
+          - Antoine de Saint-Exupéry
+        </h3>
+      </div>
     </div>
   </div>
 </div>
