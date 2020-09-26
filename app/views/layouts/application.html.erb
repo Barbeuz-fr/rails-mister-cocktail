@@ -17,23 +17,11 @@
 
   <body>
     <div class="content-wrapper">
+      <!-- Contenu -->
       <%= yield %>
-      <!-- Footer -->
-    </div>
 
-    <div class="footer text-center padding-bottom-3">
-      <ul>
-        <div class="footer-links">
-          <a href="#"><i class="fab fa-instagram text-white"></i></a>
-          <a href="#"><i class="fab fa-facebook text-white"></i></a>
-          <a href="#"><i class="fab fa-twitter text-white"></i></a>
-          <a href="#"><i class="fab fa-linkedin text-white"></i></a>
-        </div>
-        <div><br></div>
-        <div class="footer-copyright grey-text-color">
-          Little Ecologist <i class="fas fa-copyright"></i>
-        </div>
-      </ul>
+      <!-- Footer -->
+      <%= render "shared/footer" %>
     </div>
 
     <!-- Importation javascript -->
