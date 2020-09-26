@@ -1,5 +1,5 @@
 .footer {
-  background: lightgrey;
+  background: $ecologist-green;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 .footer-links a {
-  color: #0F0A08;
+  color: white;
   opacity: 0.15;
   text-decoration: none;
   font-size: 24px;
