@@ -11,8 +11,8 @@ Rails.application.routes.draw do
 
   # Pages français
   get "/accueil", to: "ecologists#fr-home"
-  get "/nos_services", to: "ecologists#fr-services"
-  get "/notre_histoire", to: "ecologists#fr-histoire"
+  get "/nos_classes", to: "ecologists#fr-classes"
+  get "/nos_ateliers", to: "ecologists#fr-ateliers"
   get "/notre_equipe", to: "ecologists#fr-notre-equipe"
 
   # get "/notre_concept", to: "ecologists#fr-concept"
