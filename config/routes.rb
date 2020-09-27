@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get "/nos_ateliers", to: "ecologists#fr-ateliers"
   get "/notre_equipe", to: "ecologists#fr-notre-equipe"
 
+  get "/paiement", to: "ecologists#fr-test-paiement"
+
   # get "/notre_concept", to: "ecologists#fr-concept"
   # get "/nos_valeurs", to: "ecologists#fr-values"
   # get "/blog_fr", to: "ecologists#fr-blog-index"
