@@ -13,7 +13,9 @@
       </div>
       <div class="col-8 pl-3" id="tagline">
         <!-- Nom -->
-        <%= image_tag "raising-future-awareness.png", alt: "Raising future generation awareness", width: "80%" %>
+        <%= image_tag "raising-future-awareness.png",
+            alt: "Raising future generation awareness",
+            width: "80%" %>
       </div>
     </div>
   </div>
@@ -58,9 +60,17 @@
   </div>
 </div>
 
-<div class="d-flex justify-content-center mt-3">
-  <%= image_tag "tree-world.png",
-      alt: "tree", width: "80%" %>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex justify-content-center mt-3">
+        <%= image_tag "tree-world.png",
+            alt: "tree",
+            width: "80%",
+            style: "border-radius: 1rem" %>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="mt-5"></div>
@@ -98,23 +108,24 @@
   </div>
 </div>
 
+<!-- Boutons -->
 <div class="container">
-<div class="row">
-  <div class="col-6 d-flex justify-content-center mt-3">
-    <a href="http://www.little-ecologists.com/nos_classes"
-       class="btn btn-success btn-lg active"
-       role="button" aria-pressed="true">
-       Découvrir nos classes
-     </a>
+  <div class="row">
+    <div class="col-6 d-flex justify-content-center mt-3">
+      <a href="http://www.little-ecologists.com/nos_classes"
+         class="btn btn-success btn-lg active"
+         role="button" aria-pressed="true">
+         Découvrir nos classes
+       </a>
+    </div>
+    <div class="col-6 d-flex justify-content-center mt-3">
+      <a href="http://www.little-ecologists.com/nos_ateliers"
+         class="btn btn-success btn-lg active"
+         role="button" aria-pressed="true">
+         Découvrir nos ateliers
+       </a>
+    </div>
   </div>
-  <div class="col-6 d-flex justify-content-center mt-3">
-    <a href="http://www.little-ecologists.com/nos_ateliers"
-       class="btn btn-success btn-lg active"
-       role="button" aria-pressed="true">
-       Découvrir nos ateliers
-     </a>
-  </div>
-</div>
 </div>
 
 <div class="mt-5"></div>
@@ -124,17 +135,8 @@
     <div class="col-12 d-flex justify-content-center">
       <%= image_tag "beach-quote.png",
         alt: "Beach",
-        style: 'width:80%;'
+        style: 'width:80%;border-radius: 1rem'
         %>
-<!--         <h3 class="overlay-text">
-        <i>
-          “Nous n’héritons pas de la terre de nos parents,
-          <br>
-          nous l’empruntons à nos enfants.”
-        </i>
-        <br>
-        - Antoine de Saint-Exupéry
-      </h3> -->
     </div>
   </div>
 </div>
