@@ -1,8 +1,14 @@
 #tagline {
-
   position: relative;
   bottom: 0;
-  left: 0;
-  top: 168px;
-
+  left: -3rem;
+  top: 8rem;
 }
+
+
+@media(max-width: 768px) {
+  #home-pictures {
+    display:none;
+  }
+}
+

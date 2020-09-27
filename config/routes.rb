@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 
   # Pages anglais
-  root to: "ecologists#us-home"
+  root to: "ecologists#fr-home"
   get "/our_services", to: "ecologists#us-services"
   get "/our_story", to: "ecologists#us-story"
   get "/our_team", to: "ecologists#us-team"
@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get "/nos_classes", to: "ecologists#fr-classes"
   get "/nos_ateliers", to: "ecologists#fr-ateliers"
   get "/notre_equipe", to: "ecologists#fr-notre-equipe"
+
+  get "/paiement", to: "ecologists#fr-test-paiement"
 
   # get "/notre_concept", to: "ecologists#fr-concept"
   # get "/nos_valeurs", to: "ecologists#fr-values"
