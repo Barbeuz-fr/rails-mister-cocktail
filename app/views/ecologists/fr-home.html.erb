@@ -1,5 +1,5 @@
 <%= render '/shared/fr-navbar' %>
-<div class="mt-5 mb-5">
+<div class="mt-1 mb-5">
   <p style="color: white;">spacing</p>
 </div>
 
@@ -7,17 +7,17 @@
   <div class="row">
     <div class="col-4">
       <!-- Logo -->
-      <%= image_tag "little_ecologists_sans_slogan.jpg", alt: "logo", width: 300 %>
+      <%= image_tag "little_ecologists_sans_slogan.jpg", alt: "logo", width: "100%" %>
 
     </div>
     <div class="col-8 pl-3" id="tagline">
       <!-- Nom -->
-      <%= image_tag "raising-future-awareness.png", alt: "Raising future generation awareness", width: 450 %>
+      <%= image_tag "raising-future-awareness.png", alt: "Raising future generation awareness", width: "80%" %>
     </div>
   </div>
 </div>
 
-  <!-- Ajout logo -->
+  <!-- Texte mission -->
 
 <div class="container">
   <div class="row">
@@ -54,6 +54,11 @@
 
     </div>
   </div>
+</div>
+
+<div class="d-flex justify-content-center mt-3">
+  <%= image_tag "tree-world.png",
+      alt: "tree", width: "50%" %>
 </div>
 
 <div class="mt-5"></div>

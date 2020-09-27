@@ -25,8 +25,13 @@
     Un contenu adapté à l'âge des enfants de 4 à 10 ans : activités manuelles, lectures, travail en mode projet, introduction de concepts scientifiques pour les plus grands.
   </h3>
 
+  <div class="d-flex justify-content-center mt-3">
+    <%= image_tag "atelier-arc-en-ciel-rainbow-hands-girl.jpg", alt: "Rainbow girl", width: "60%" %>
+  </div>
+
+
   <br>
-  <h2 class="green-font"> <b><i>
+  <h2 class="green-font mt-3"><b><i>
      Structure du programme
     </i></b>
   </h2>
@@ -40,7 +45,7 @@
   </h3>
 
   <h3>
-    Il est composé de 8 cours de 60 minutes organisés sur Zoom 1 fois par semaine et de 2 ateliers éco-ludiques au début et à la fin du programme.
+    Il est composé de <b class="green-font">8 cours de 60 minutes organisés sur Zoom 1 fois par semaine</b> et de <b class="green-font">2 ateliers éco-ludiques</b> au début et à la fin du programme.
   </h3>
 
   <h3>
@@ -71,39 +76,39 @@
   </h2>
 
   <h3>
-    <i class="fas fa-globe-americas green-font"></i>
+    <i class="fas fa-globe-americas fa-lg blue-font"></i>
     Le réchauffement climatique
   </h3>
   <h3>
-    <i class="fas fa-sun green-font"></i>
+    <i class="fas fa-sun fa-lg orange-font"></i>
     Les énergies fossiles et renouvelables
   </h3>
   <h3>
-    <i class="fas fa-recycle green-font"></i>
+    <i class="fas fa-recycle fa-lg green-font"></i>
     Le recyclage des déchets
   </h3>
   <h3>
-    <i class="fas fa-utensils green-font"></i>
+    <i class="fas fa-utensils fa-lg light-red-font"></i>
     Le gaspillage alimentaire
   </h3>
   <h3>
-    <i class="fas fa-tree green-font"></i>
+    <i class="fas fa-tree fa-lg green-font"></i>
     La protection des forêts et espaces naturels
   </h3>
   <h3>
-    <i class="fab fa-pagelines green-font"></i>
+    <i class="fas fa-mountain fa-lg dark-brown-font"></i>
     Les ressources naturelles
   </h3>
   <h3>
-    <i class="fas fa-water green-font"></i>
+    <i class="fas fa-water fa-lg blue-font"></i>
     La protection des océans
   </h3>
   <h3>
-    <i class="fas fa-shopping-bag green-font"></i>
+    <i class="fas fa-shopping-bag fa-lg light-purple-font"></i>
     Le plastique
   </h3>
   <h3>
-    <i class="fas fa-users green-font"></i>
+    <i class="fas fa-users fa-lg blue-font"></i>
     L'impact de l'homme et de chaque geste du quotidien
   </h3>
 
@@ -129,68 +134,99 @@
 
     <div class="col-4">
       <div class="card card-height">
-        <p class="dark-brown-font m-0"><i>
+
+        <!-- Title -->
+        <p class="light-red-font mt-0 mb-1"><i><b>
           L'Ecocinnelle
-        </i></p>
+        </b></i></p>
+
+        <!-- Image -->
         <%= image_tag "coccinelle.png",
             alt: "ecocinnelle",
-            style: 'width:90%;' %>
-        <p><small>
+            style: 'width:90%; border-radius: 1rem' %>
 
-          Pour les 5 ans, actuellement en Kindergarten et Grande Section de Maternelle
-        </small></p>
-        <p><small>
+        <!-- Text -->
+        <div class="card-text">
+          <p><small>
+            Pour les 5 ans, actuellement en Kindergarten et Grande Section de Maternelle
+          </small></p>
+          <p><small>
+            Ouverture en cours d’une classe pour les 4 ans, pre K ou Moyenne Section de Maternelle
+          </small></p>
+        </div>
 
-          Ouverture en cours d’une classe pour les 4 ans, pre K ou Moyenne Section de Maternelle
-        </small></p>
-
-        <a href="mailto:marie@little-ecologists.com"
-           class="btn btn-info active"
-           role="button" aria-pressed="true">
-           Inscrire mon enfant
-         </a>
+        <!-- Subscribe button -->
+        <div class="bottom-button">
+          <a href="mailto:marie@little-ecologists.com"
+             class="btn btn-info active"
+             role="button" aria-pressed="true">
+             Inscrire mon enfant
+           </a>
+        </div>
 
       </div>
     </div>
 
     <div class="col-4">
       <div class="card card-height">
-        <p class="dark-brown-font m-0"><i>
+
+        <!-- Title -->
+        <p class="green-font mt-0 mb-1"><i><b>
           L'Ecolibri
-        </i></p>
+        </b></i></p>
+
+        <!-- Image -->
         <%= image_tag "colibri.png",
             alt: "ecolibri",
-            style: 'width:90%;' %>
-        <p><small>
-          Pour les 5 ans, actuellement en Kindergarten et Grande Section de Maternelle
-        </small></p>
+            style: 'width:90%; border-radius: 1rem' %>
 
-        <a href="mailto:marie@little-ecologists.com"
-         class="btn btn-info active"
-         role="button" aria-pressed="true">
-         Inscrire mon enfant
-       </a>
+        <!-- Text -->
+        <div class="card-text">
+          <p><small>
+            Pour les 5 ans, actuellement en Kindergarten et Grande Section de Maternelle
+          </small></p>
+        </div>
+
+        <!-- Subscribe button -->
+        <div class="bottom-button">
+          <a href="mailto:marie@little-ecologists.com"
+             class="btn btn-info active"
+             role="button" aria-pressed="true">
+             Inscrire mon enfant
+           </a>
+        </div>
 
       </div>
     </div>
 
     <div class="col-4">
       <div class="card card-height">
-        <p class="dark-brown-font m-0"><i>
+
+        <!-- Title -->
+        <p class="dark-brown-font mt-0 mb-1"><i><b>
           L'Ekoala
-        </i></p>
+        </b></i></p>
+
+        <!-- Image -->
         <%= image_tag "koala.png",
             alt: "ekoala",
-            style: 'width:90%;' %>
-        <p><small>
-          Pour les 8-10 ans, en 3rd Grade, 4th Grade et CE2, CM1
-        </small></p>
+            style: 'width:90%; border-radius: 1rem' %>
 
-        <a href="mailto:marie@little-ecologists.com"
-           class="btn btn-info active"
-           role="button" aria-pressed="true">
-           Inscrire mon enfant
-         </a>
+        <!-- Text -->
+        <div class="card-text">
+          <p><small>
+            Pour les 8-10 ans, en 3rd Grade, 4th Grade et CE2, CM1
+          </small></p>
+        </div>
+
+        <!-- Subscribe button -->
+        <div class="bottom-button">
+          <a href="mailto:marie@little-ecologists.com"
+             class="btn btn-info active"
+             role="button" aria-pressed="true">
+             Inscrire mon enfant
+           </a>
+        </div>
 
       </div>
     </div>

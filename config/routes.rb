@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 
   # Pages anglais
-  root to: "ecologists#us-home"
+  root to: "ecologists#fr-home"
   get "/our_services", to: "ecologists#us-services"
   get "/our_story", to: "ecologists#us-story"
   get "/our_team", to: "ecologists#us-team"
