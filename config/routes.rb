@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get "/nos_classes", to: "ecologists#fr-classes"
   get "/nos_ateliers", to: "ecologists#fr-ateliers"
   get "/notre_equipe", to: "ecologists#fr-notre-equipe"
+  get "/inscription", to: "ecologists#fr-inscription"
 
   get "/paiement", to: "ecologists#fr-test-paiement"
 
